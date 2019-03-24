@@ -1,7 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Bruce
- * Date: 2019/3/24
- * Time: 16:11
- */
+namespace effsoft\eff\module\role\modules\admin\controllers;
+
+use effsoft\eff\EffController;
+
+class ManageController extends EffController{
+
+    public function actionIndex(){
+
+        return $this->render('//role/admin/manage/index');
+    }
+}

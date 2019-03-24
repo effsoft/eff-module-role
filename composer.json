@@ -24,6 +24,7 @@
   
     },
     "config": {
+      "vendor-dir": "../vendor/eff-module-role",
       "process-timeout": 1800,
       "fxp-asset": {
         "enabled": false
@@ -80,10 +81,7 @@
         "type": "path",
         "url": "../eff"
       },
-      "packagist-image":{
-        "type": "composer",
-        "url": "https://packagist.phpcomposer.com"
-      },
+      
       "asset-packagist":{
         "type": "composer",
         "url": "https://asset-packagist.org"
