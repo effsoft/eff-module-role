@@ -22,6 +22,12 @@ class DefaultRule extends Rule
             return true;
         }
 
+        if (!empty($params)){
+            if (strval(\Yii::$app->user->identity->getId()) === strval($params->uid)){
+                return true;
+            }
+        }
+
         return \Yii::$app->authManager->checkAccess($uid,$item,$params);
     }
 }
